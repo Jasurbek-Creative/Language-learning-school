@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import RoundBtn from "./RoundBtn";
 
 const Header = () => {
   return (
@@ -14,7 +16,7 @@ const Header = () => {
         <LinkNav name="Blog" />
       </div>
 
-      <HeaderBtn />
+      <RoundBtn isBgPurple={false}/>
     </header>
   );
 };
@@ -23,16 +25,9 @@ export default Header;
 
 function LinkNav(prop) {
   return (
-    <a href="#" className="text-[14px] font-light text-[#666680]">
+    <a href="#" className={"text-[14px] font-light text-gray"}>
       {prop.name}
     </a>
   );
 }
 
-function HeaderBtn() {
-  return (
-    <button className="text-primary bg-white  rounded-full px-[32px] py-[12px] text-[14px] font-bold">
-      Get Started
-    </button>
-  );
-}
