@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ValueSection from "./components/ValueSection";
 import CenterChildren from "./components/CenterChildren";
+import TeachersSection from "./components/TeachersSection";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         <Header />
         <Hero />
       </div>
-      <ValueSection />
+      {/* <ValueSection /> */}
+      <TeachersSection />
     </CenterChildren>
   )
 };

@@ -14,7 +14,7 @@ export default Hero;
 
 const HeroLeft = () => {
   return (
-    <div>
+    <div className="mt-[89px]">
       <h1 className="text-[56px] font-light">
         A <span className="font-medium text-primary">unique</span> approach to
         learning foreign languages online
